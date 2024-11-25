@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Blocks Tour</title>
+    <link rel="stylesheet" href="startguidedtour.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Virtual Campus Tours and Exploration</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ExploreTours.html">Go Back to Explore Tours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Campus Blocks Section -->
+    <section id="campus-blocks">
+        <h2>Explore videos of Our Campus by block :</h2>
+        <div id="block-selection">
+            <button onclick="viewBlock('administrative')">Administrative Block</button>
+            <button onclick="viewBlock('science')">Computer Science Block</button>
+            <button onclick="viewBlock('electrical')">Electrical Block</button>
+            <button onclick="viewBlock('library')">Library</button>
+            <button onclick="viewBlock('sports')">Sports Arena</button>
+            <button onclick="viewBlock('canteen')">Canteen</button>
+            <button onclick="viewBlock('wholeCampus')">Whole Campus</button>
+        </div>
+    </section>
+
+    <!-- YouTube Video Container -->
+    <div id="video-container" align="center">
+        <iframe id="block-video" src="" frameborder="0" style="display: none; width: 100%; max-width: 560px; height: 315px;"></iframe>
+    </div>
+
+    <!-- JavaScript for handling video display -->
+    <script>
+        function viewBlock(block) {
+            let videoUrl = '';
+
+            if (block === 'administrative') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'science') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'electrical') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'library') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'sports') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'canteen') {
+                videoUrl = 'https://www.youtube.com/qwertyui'; // Example YouTube link
+            } else if (block === 'wholeCampus'){
+                videoUrl = 'https://www.youtube.com/embed/PkxKNmlP0NE'; // Example YouTube link
+            }
+
+            // Get the iframe element
+            const videoElement = document.getElementById('block-video');
+            videoElement.src = videoUrl;
+
+            // Display the video
+            videoElement.style.display = 'block';
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Campus Explore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="js/tour.js"></script>
+</body>
+</html>

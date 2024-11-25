@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Set default text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #830606; /* Dark red background */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding to give more space for the image */
+    position: relative; /* Allow positioning for logo and other elements */
+    height: 120px; /* Set a fixed height for the header */
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+    height: 100%; /* Ensure the logo section takes up the full height */
+}
+
+/* Logo Styling */
+.logo {
+    height: 120px; /* Increase logo size */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent logo from stretching */
+    max-width: 100%; /* Ensure the logo does not overflow */
+}
+
+/* Optional: Add some extra logo styles */
+.logo-section img {
+    max-width: 80%; /* Restrict the logo size to 80% of the header width */
+}
+
+/* Container Styling */
+.welcome-text-container {
+    text-align: center; /* Center-align the text */
+    margin: 5px auto; /* Adds space around the text */
+    padding: 10px; /* Add padding for breathing space */
+    max-width: 60%; /* Limit the width of the container */
+    /*background-color: #f9f9f9; /* Soft background color */
+    /*border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Welcome Heading Styling */
+.welcome-heading {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-size: 2em; /* Large text */
+    color: #830606; /* Dark red color */
+    margin: 0;
+    letter-spacing: 1px; /* Slight spacing between letters */
+    font-weight: bold;
+    text-transform: uppercase; /* Make text uppercase for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Exploration Text Styling */
+.exploration-text {
+    font-family: 'Arial', sans-serif; /* Clean, modern sans-serif font */
+    font-size: 1em; /* Slightly smaller font size */
+    color: #333; /* Darker text color for contrast */
+    margin-top: 10px; /* Add space between the two lines of text */
+    font-weight: 400; /* Normal weight for the subheading */
+    letter-spacing: 1px; /* Light letter-spacing for readability */
+    line-height: 1.5; /* Increase line height for better readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Main Content Styling */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 1px 25px;
+}
+
+/* Text Section Styling */
+.text-section {
+    flex: 1;
+    max-width: 45%; /* Control width of text section */
+    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Text Highlight Styling */
+.highlighted-text {
+    color: #830606; /* Highlight text with a similar red color */
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Image Section Styling */
+.image-section {
+    flex: 1;
+    max-width: 50%; /* Control width of image section */
+}
+
+/* Image Container Styling */
+.image-container {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+/* Button Section Styling */
+.button-section {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; /* Vertically center the button (optional if you want it centered vertically within its container) */
+    height: 5vh; /* Optional: makes the container take up the full height of the viewport */
+}
+
+/* Button Styling */
+.explore-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #830606; /* Button background color */
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-button:hover {
+    background-color: #bb0808; /* Darker red on hover */
+}
+
+/* Social Links Styling */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Philosophy Text Styling */
+.philosophy-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer Content */
+.footer-container {
+    width: 100%;
+    max-width: 1200px; /* Center and limit the footer width */
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .content-container {
+        flex-direction: column; /* Stack content vertically on medium screens */
+        align-items: center;
+    }
+
+    .text-section, .image-section {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .explore-button {
+        width: 100%; /* Full width for the button on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 40px; /* Reduce logo size on smaller screens */
+    }
+
+    .text-section {
+        font-size: 1.1em;
+        max-width: 100%;
+    }
+
+    .image-container {
+        max-width: 100%; /* Make the image responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 35px; /* Smaller logo for very small screens */
+    }
+
+    .philosophy-text {
+        font-size: 14px; /* Reduce font size on very small screens */
+    }
+
+    .explore-button {
+        font-size: 1em; /* Slightly smaller button text */
+        padding: 10px;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+}

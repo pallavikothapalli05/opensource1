@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Campus Tour</title>
+    <link rel="stylesheet" href="ExploreTours.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Virtual Campus Tours and Exploration</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Go To Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section with Tour Buttons -->
+    <div class="section">
+        <div class="tour-actions">
+            <button id="image-tour" data-description="Embark on an image-driven tour of the campus, categorized by department." onclick="startTour()">Deparments</button>
+            <button id="guided-tour" data-description="A guided tour of the department and entire campus with video presentations." onclick="window.location.href='startguidedtour.html'; return false;">Guided Tour</button>
+            <button id="self-guided" data-description="A variety of student-run clubs offering diverse activities and opportunities." onclick="window.location.href='clubs.html'; return false;">Clubs</button>
+            <button id="self-guided" data-description="A range of celebrations and events taking place throughout the campus." onclick="window.location.href='VJIETEvents.html'; return false;">College Events</button>
+            <button id="3D-view" data-description="A fully interactive 3D virtual tour of the college campus." onclick="window.location.href='3DView.html'; return false;">3D View</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Campus Explore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

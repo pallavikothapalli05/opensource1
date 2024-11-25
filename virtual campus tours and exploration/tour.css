@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #830606; /* Dark red background */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Increased padding for a more spacious header */
+    position: relative;
+    height: 100px; /* Adjusted height to give more space for the header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5em !important;
+    color: #830606 !important;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* Navigation Styling */
+nav {
+    position: absolute;
+    right: 20px; /* Align the navigation to the right */
+    top: 90px; /* Add space from the top of the header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 20px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+/* Campus Blocks Section */
+#campus-blocks {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#campus-blocks h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Block Selection Buttons */
+#block-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#block-selection button {
+    padding: 10px 15px; /* Reduced padding for smaller buttons */
+    font-size: 0.9em; /* Slightly smaller font size */
+    background-color: #830606;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px; /* Reduced width */
+}
+
+#block-selection button:hover {
+    background-color: #6f0303;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+#block-selection button:focus {
+    outline: none;
+}
+
+/* Image Display Styling */
+#image-container {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;  /* Ensure the container takes up full width available */
+    max-width: 350px; /* Reduce the container size */
+    margin: 0 auto; /* Center the image container */
+    padding: 0; /* Remove any padding to avoid extra space */
+}
+
+#block-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Footer Content */
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #block-selection button {
+        width: 160px; /* Smaller width for buttons on smaller screens */
+    }
+
+    #image-container {
+        margin-top: 20px;
+        max-width: 300px;  /* Further reduce size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #block-selection button {
+        width: 100%; /* Full width for buttons on very small screens */
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+}

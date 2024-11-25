@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Blocks Tour</title>
+    <link rel="stylesheet" href="tour.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Campus Tours and Exploration</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ExploreTours.html">Go Back to Explore Tours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="campus-blocks">
+        <h2>Explore Images of Our Campus by Block:</h2>
+        <div id="block-selection">  
+            <button onclick="viewBlock('automobile')">AutoMobile Engineering</button>
+            <button onclick="viewBlock('civil')">Civil Engineering</button>
+            <button onclick="viewBlock('cseandcsbs')">Computer Science and Engineering & CSBS</button>
+            <button onclick="viewBlock('cseaimliot')">CSE - AI, ML & IOT</button>
+            <button onclick="viewBlock('csecysdsaids')">CSE - (CyS, DS) and AI & DS</button>
+            <button onclick="viewBlock('electricalandelectronics')">Electrical and Electronics Engineering</button>
+            <button onclick="viewBlock('electronicsandcommunication')">Electronics and Communication Engineering</button>
+            <button onclick="viewBlock('electronicsandinstrumentation')">Electronics and Instrumentation Engineering</button>
+            <button onclick="viewBlock('humanitiesandsciences')">Humanities and Sciences</button>
+            <button onclick="viewBlock('informationtechnology')">Information Technology</button>
+            <button onclick="viewBlock('mechanical')">Mechanical Engineering</button>
+        </div>
+        <br>
+            <!-- This is where the image will appear -->
+        <div id="image-container">
+            <img id="block-image" src="" alt="Block Image" style="display: none; width: 100%; max-width: 400px;">
+        </div>
+    </section>
+<script>
+    function viewBlock(block) {
+        // Image URL to display
+        let imageUrl = '';
+
+        // Check which block was clicked and assign the appropriate image URL
+        if (block === 'automobile') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/Automobile_Department_Inner.png';
+        } else if (block === 'civil') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/Civil%20engineering%202.jpg';
+        } else if (block === 'cseandcsbs') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/CSE_Department_Inner.png.png';
+        } else if (block === 'cseaimliot') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/CSE%20-%20AI,%20ML%20&%20DS.png';
+        } else if (block === 'csecysdsaids') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/CSE%20-%20DS%20&%20CYS%20(1).png';
+        } else if (block === 'electricalandelectronics') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/EEE_Department_Inner.png';  
+        } else if (block === 'electronicsandcommunication') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/ECE_Department_Inner.png';  
+        } else if (block === 'electronicsandinstrumentation') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/EIE_Department_Inner.JPG';  
+        } else if (block === 'humanitiesandsciences') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/HS_Department_Inner.png';  
+        } else if (block === 'informationtechnology') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/IT_Department_Inner.png';  
+        } else if (block === 'mechanical') {
+            imageUrl = 'https://vnrvjiet.ac.in/assets/images/Mech_Department_Inner.png';  
+        }
+
+        // Get the image element
+        const imageElement = document.getElementById('block-image');
+        
+        // Set the image source to the URL based on the selected block
+        imageElement.src = imageUrl;
+        
+        // Display the image by setting the display property to 'block'
+        imageElement.style.display = 'block';
+    }
+</script>
+
+<!--
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Campus Explore. All rights reserved.</p>
+    </div>
+</footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="js/tour.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Google Map of College</title>
+    <link rel="stylesheet" href="3DView.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Virtual Campus Tours and Exploration</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ExploreTours.html">Go Back to Explore Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Replace the URL with your college's Street View URL -->
+    <section id="campus-blocks">
+        <h2>Explore Our College in 3D</h2>
+        <iframe 
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!4v1695444583210!6m8!1m7!1sAF1QipNGtV6uJlUhF1ZVqM9nqD5REvH5V_f22Yk9d_J1!2m2!1d17.5386378!2d78.3852969!3f195.89!4f77.75!5f3.33"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Campus Explore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
